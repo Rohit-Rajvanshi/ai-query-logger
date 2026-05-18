@@ -6,7 +6,7 @@
 
 # Why did I build it?
 
-#### Built to demonstrate end-to-end backend development — REST API design, ORM-backed persistence, and external API integration patterns commonly used in AI engineering.
+## Built to demonstrate end-to-end backend development — REST API design, ORM-backed persistence, and external API integration patterns commonly used in AI engineering.
 
 
 # Live URL: https://ai-query-logger-production.up.railway.app/docs
