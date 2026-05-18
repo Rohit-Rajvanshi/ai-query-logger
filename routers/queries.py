@@ -14,6 +14,10 @@ router = APIRouter(
 def post_query(query : QueryCreate , session : SessionDep):
     question_query = query.question
     answer_text = ask_query(question_query)
+
+    if answer_text is None:
+        raise HTTPException(status_code = 503 , detail = "A Faliure on our side")
+
     db_query = Query(answer = answer_text , question = query.question )
     session.add(db_query)
     session.commit()
